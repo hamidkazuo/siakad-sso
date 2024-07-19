@@ -1,0 +1,398 @@
+/* Import Bootstrap and Google Fonts */
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Custom CSS */
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding-top: 20px; /* Adjust this value based on your navbar height */
+    padding-left: 20px; /* Adjust this value based on your navbar height */
+    padding-right: 20px; /* Adjust this value based on your navbar height */
+}
+
+.modal-dialog.modal-lg {
+    max-width: 80%;
+}
+
+.modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.login-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.welcome-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 20px; /* Mengurangi padding */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Membatasi lebar maksimum container */
+    margin-left: auto; /* Memusatkan container */
+    margin-right: auto; /* Memusatkan container */
+}
+
+.application-button {
+    flex: 1 1 150px; /* Mengatur lebar minimum setiap tombol */
+    margin: 5px; /* Mengurangi margin */
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    width: 100px; /* Sesuaikan ukuran logo sesuai kebutuhan */
+    margin-bottom: 20px; /* Spasi antara logo dan judul */
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+
+.profile-picture {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.pp-profile-container {
+    width: 120px; /* Lebar kontainer foto profil */
+    height: 120px; /* Tinggi kontainer foto profil */
+    border: 3px solid #ddd; /* Garis tepi dengan warna abu-abu muda */
+    border-radius: 50%; /* Agar kontainer menjadi bulat */
+    margin: 75px; /* Meletakkan kontainer di tengah dengan margin bawah 100px */
+    display: flex; /* Mengubah display menjadi flex untuk penyesuaian posisi */
+    justify-content: center; /* Menengahkan konten horizontal di dalam kontainer */
+    align-items: center; /* Menengahkan konten vertikal di dalam kontainer */
+}
+
+.pp-profile-picture {
+    width: 200px; /* Agar gambar foto profil mengisi kontainer */
+    height: 200px; /* Mengatur ketinggian gambar sesuai dengan lebar */
+    object-fit: cover; /* Pastikan gambar terpotong dengan baik */
+    border-radius: 50%; /* Agar kontainer menjadi bulat */
+    display: flex; /* Mengubah display menjadi block agar dapat diatur margin */
+}
+
+.pp-profile-picture-su {
+    width: 50px; /* Agar gambar foto profil mengisi kontainer */
+    height: 50px; /* Mengatur ketinggian gambar sesuai dengan lebar */
+    object-fit: cover; /* Pastikan gambar terpotong dengan baik */
+    border-radius: 50%; /* Agar kontainer menjadi bulat */
+    display: flex; /* Mengubah display menjadi block agar dapat diatur margin */
+}
+
+.pp-profile-picture-edit {
+    width: 100px; /* Agar gambar foto profil mengisi kontainer */
+    height: 100px; /* Mengatur ketinggian gambar sesuai dengan lebar */
+    object-fit: cover; /* Pastikan gambar terpotong dengan baik */
+    border-radius: 50%; /* Agar kontainer menjadi bulat */
+    display: flex; /* Mengubah display menjadi block agar dapat diatur margin */
+}
+
+.user-info-container {
+    margin-top: 20px; /* Jarak atas kontainer informasi pengguna */
+    padding: 20px; /* Padding kontainer informasi pengguna */
+    background-color: #ffffff; /* Warna latar belakang kontainer informasi pengguna */
+    border-radius: 10px; /* Sudut bulat kontainer informasi pengguna */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan kontainer informasi pengguna */
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.back-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.btn-outline-secondary {
+    border-color: #ccc;
+    color: #555;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #f0f0f0;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-group-append {
+    position: relative;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-control {
+    font-size: 16px;
+    border-color: #ccc;
+    padding-right: 40px;
+}
+
+.input-group-append button {
+    border: none;
+    background-color: transparent;
+}
+
+.input-group-append button:focus {
+    outline: none;
+}
+
+select.form-control {
+    padding-top: 2px;
+}
+
+.input-group-append button {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.input-group-append button:focus {
+    outline: none;
+}
+
+/* Tampilkan ikon mata ketika password terlihat */
+#password.shown + .input-group-append #passwordIcon {
+    display: block;
+}
+
+#password.shown {
+    -webkit-text-security: none;
+    -moz-text-security: none;
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.alert-dismissible .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 20px;
+    line-height: 1;
+    color: #000;
+    opacity: 0.5;
+}
+
+.alert-dismissible .close:hover {
+    color: #333;
+    opacity: 1;
+}
+
+.modal-confirm {		
+	color: #636363;
+	width: 325px;
+}
+
+.modal-confirm .modal-content {
+	padding: 20px;
+	border-radius: 5px;
+	border: none;
+}
+.modal-confirm .modal-header {
+	border-bottom: none;   
+	position: relative;
+}
+.modal-confirm h4 {
+	text-align: center;
+	font-size: 26px;
+	margin: 30px 0 -15px;
+}
+.modal-confirm .form-control, .modal-confirm .btn {
+	min-height: 40px;
+	border-radius: 3px; 
+}
+.modal-confirm .close {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+}	
+.modal-confirm .modal-footer {
+	border: none;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 13px;
+}	
+.modal-confirm .icon-box {
+	color: #fff;		
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: -70px;
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	z-index: 9;
+	background: #ef513a;
+	padding: 15px;
+	text-align: center;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.modal-confirm .icon-box i {
+	font-size: 56px;
+	position: relative;
+	top: 4px;
+}
+.modal-confirm.modal-dialog {
+	margin-top: 80px;
+}
+.modal-confirm .btn {
+	color: #fff;
+	border-radius: 4px;
+	background: #ef513a;
+	text-decoration: none;
+	transition: all 0.4s;
+	line-height: normal;
+	border: none;
+}
+.modal-confirm .btn:hover, .modal-confirm .btn:focus {
+	background: #da2c12;
+	outline: none;
+}
+
+.trigger-btn {
+	display: inline-block;
+	margin: 100px auto;
+}
+
+.modal-confirm {		
+    color: #636363;
+    width: 400px;
+    margin: 30px auto;
+}
+.modal-confirm .modal-content {
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+}
+.modal-confirm .modal-header {
+    border-bottom: none;   
+    position: relative;
+}
+.modal-confirm h4 {
+    text-align: center;
+    font-size: 26px;
+    margin: 30px 0 -10px;
+}
+.modal-confirm .close {
+    position: absolute;
+    top: -5px;
+    right: -2px;
+}
+.modal-confirm .modal-body {
+    color: #999;
+}
+.modal-confirm .modal-footer {
+    border: none;
+    text-align: center;		
+    border-radius: 5px;
+    font-size: 13px;
+    padding: 10px 15px 25px;
+}
+.modal-confirm .modal-footer a {
+    color: #999;
+}		
+.modal-confirm .icon-box {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    z-index: 9;
+    text-align: center;
+    border: 3px solid #f15e5e;
+}
+.modal-confirm .icon-box i {
+    color: #f15e5e;
+    font-size: 46px;
+    display: inline-block;
+    margin-top: 13px;
+}
+.modal-confirm .btn {
+    color: #fff;
+    border-radius: 4px;
+    background: #60c7c1;
+    text-decoration: none;
+    transition: all 0.4s;
+    line-height: normal;
+    min-width: 120px;
+    border: none;
+    min-height: 40px;
+    border-radius: 3px;
+    margin: 0 5px;
+    outline: none !important;
+}
+.modal-confirm .btn-info {
+    background: #c1c1c1;
+}
+.modal-confirm .btn-info:hover, .modal-confirm .btn-info:focus {
+    background: #a8a8a8;
+}
+.modal-confirm .btn-danger {
+    background: #f15e5e;
+}
+.modal-confirm .btn-danger:hover, .modal-confirm .btn-danger:focus {
+    background: #ee3535;
+}
+.trigger-btn {
+    display: inline-block;
+    margin: 100px auto;
+}
