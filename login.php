@@ -224,7 +224,7 @@
 <body>
     <div class="login-container">
         <img src="assets/img/logo.png" alt="Logo Universitas" class="logo">
-        <h5 class="card-title text-center mb-4">Universitas Islam Majapahit</h5>
+        <h5 class="card-title text-center mb-4">Single Sign-ON Login</h5>
                 <form method="post" action="">
                     <div class="form-group">
                         <div class="input-group">
