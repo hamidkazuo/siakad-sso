@@ -22,6 +22,13 @@ if($user_data) {
     $email = $user_data['email'];
     $role = $user_data['role'];
     $photo = $user_data['picture'];
+
+// Cek apakah NIM dan password kosong
+    if (empty($nim) || empty($password)) {
+        header('location: register.php');
+        exit;
+    }
+	
 } else {
     // Tampilkan pesan jika data pengguna tidak ditemukan
     header('location: logout.php');
