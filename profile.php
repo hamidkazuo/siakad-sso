@@ -100,6 +100,12 @@ if($user_data) {
             break;
     }
 
+    // Cek apakah NIM dan password kosong
+    if (empty($nim) || empty($password)) {
+        header('location: register.php');
+        exit;
+    }
+
     // Jika kolom picture kosong, gunakan foto default
     if (empty($photo)) {
         $photo = 'assets/img/default.png';
