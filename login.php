@@ -22,8 +22,8 @@
     require_once 'vendor/autoload.php';
 
     //key yang didapatkan setelah membuat credentials OAuth 2.0 Client IDs di google cloud console
-    $client_id = '(isi dengan client id anda)';
-    $client_secret = '(isi dengan client secret anda)';
+    $client_id = '(isi dengan client id)';
+    $client_secret = '(isi dengan client secret)';
     $redirect_uri = 'http://localhost/siakad-sso/login.php'; //harus sama dengan yang ada di google cloud console
     
     //inisialisasi sign in google
